@@ -11,14 +11,14 @@ Lets say that you just played the first word 'audio' and your Wordle board looks
 
 As you can see D is green and I is yellow. A, U, and O are grey (specified as black in this program). This forms the ruleset 'bbgyb' that you specify to wordle_solver.py with -r:
 
-'''python wordle_solver.py -w audio -r bbgyb'''
+```python wordle_solver.py -w audio -r bbgyb```
 
 You also specify the word 'audio with -w. Running the above command gives you the following output:
 
-'''
+```
 Found 57 possible solution words.
 Words: {'hidel', 'bidry', 'widen', 'midst', 'eider', 'widdy', 'midis', 'sides', 'hides', 'hided', 'tiddy', 'fidel', 'indin', 'kiddy', 'fidge', 'tided', 'riden', 'bides', 'indri', 'indef', 'rider', 'index', 'indic', 'sidhe', 'ridge', 'sider', 'tides', 'igdyr', 'sidth', 'nides', 'biddy', 'rides', 'indyl', 'nidge', 'wides', 'midge', 'hider', 'sided', 'giddy', 'bidri', 'middy', 'nided', 'midgy', 'mider', 'wider', 'fides', 'cider', 'indiv', 'width', 'indew', 'ridgy', 'bided', 'bider', 'bidet', 'indii', 'vidry', 'sidle'}
-'''
+```
 
 Every word that was outputted to the console is a valid 5 letter word that conforms to the ruleset specified and is thus a valid next word to play. Keep in mind not every word might be playable if it's not in the NYT's dictionary of playable words.
 
@@ -28,14 +28,14 @@ Let's choose 'cider' from this list of words. This gives us the next board:
 
 Great! Let's specify the next ruleset. Remember to keep the previous word and ruleset in the command:
 
-'''python wordle_solver.py -w audio cider -r bbgyb bggyy'''
+```python wordle_solver.py -w audio cider -r bbgyb bggyy```
 
 As you play more words, you will keep appending new words and rulesets to this command. Running the above command gives us the following output:
 
-'''
+```
 Found 1 possible solution words.
 Words: {'ridge'}
-'''
+```
 
 And since there is only one word in the entire english dictionary of five-letter words that matches our rulesets, it must be the correct word! Playing 'ridge' wins the game!
 
