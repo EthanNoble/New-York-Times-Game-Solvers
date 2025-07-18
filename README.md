@@ -1,5 +1,5 @@
 # Purpose
-You can use these suite of tools to solve the many New York Times games. This project is intended to be a way to learn more about problem solving with programming and not intended to be used to aimlessly cheat at these games. Eventually I want to write a solver for every NYT game that's possible to solve programmatically.
+This is intended to be a way to learn about problem solving with programming and not intended to be used to aimlessly cheat at Wordle.
 
 # Wordle Solver
 Under the wordle folder, you can run the wordle_solver.py script with the required `-w` and `-r` command line arguments. `-w` is used to specify the list of words that you have already played on the Wordle board, and `-r` is used to specify the rule sets for green (g), yellow (y), or black (b) corresponding to each word. An example use case is given below:
